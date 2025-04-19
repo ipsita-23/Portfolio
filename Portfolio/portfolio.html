@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ipsita Umang - Neon Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #0d0d0d;
+      color: #ffffff;
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    h1, h2 {
+      color: #ffffff;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .neon-box {
+      padding: 2rem;
+      border: 2px solid #00f0ff;
+      border-radius: 16px;
+      background: rgba(26, 26, 26, 0.6);
+      backdrop-filter: blur(8px);
+      text-align: center;
+      font-size: 1.2rem;
+      box-shadow: 0 0 15px #00f0ff;
+      transition: all 0.3s ease-in-out;
+      margin-bottom: 2rem;
+    }
+
+    .neon-box:hover {
+      box-shadow: 0 0 25px #00f0ff, 0 0 40px #00f0ff;
+    }
+
+    .neon-btn {
+      padding: 0.75rem 1.5rem;
+      border: 2px solid #00f0ff;
+      border-radius: 8px;
+      background-color: transparent;
+      color: #00f0ff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 0 10px transparent;
+      text-decoration: none;
+    }
+
+    .neon-btn:hover {
+      background-color: #001f2f;
+      box-shadow: 0 0 15px #00f0ff, 0 0 30px #00f0ff;
+    }
+
+    .section {
+      margin-bottom: 4rem;
+    }
+
+    .pulse {
+      animation: pulseGlow 2s infinite;
+    }
+
+    @keyframes pulseGlow {
+      0% { box-shadow: 0 0 10px #00f0ff; }
+      50% { box-shadow: 0 0 20px #00f0ff, 0 0 30px #00f0ff; }
+      100% { box-shadow: 0 0 10px #00f0ff; }
+    }
+
+    /* Skill badges */
+    .badge {
+      border: 1px solid #00f0ff;
+      color: #00f0ff;
+      padding: 0.3rem 0.8rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      box-shadow: 0 0 6px #00f0ff;
+      transition: transform 0.3s ease-in-out;
+      display: inline-block;
+    }
+
+    .badge:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 12px #00f0ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header Section -->
+    <header class="section">
+      <div class="neon-box pulse">
+        <h1>Welcome to Ipsita Umang's Portfolio</h1>
+        <p>Showcasing creativity and innovation in web development.</p>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="neon-box">
+        <h2>About Me</h2>
+        <p style="margin-bottom: 1rem;">
+          I'm <strong>Ipsita Umang</strong>, a Computer Science & Engineering student specializing in <strong>Artificial Intelligence & Machine Learning</strong>. I’m a tech enthusiast who thrives on solving real-world problems through code.
+        </p>
+        <p style="margin-bottom: 1rem;">
+          When I'm not coding, you’ll find me exploring new tech trends, designing interfaces, or jotting down ideas for my next project. I’m passionate about creating things that look good <em>and</em> work great.
+        </p>
+
+        <h3 style="margin-top: 2rem; font-size: 1.5rem; color: #00f0ff;">Tech Stack & Skills</h3>
+        <div style="margin-top: 1rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem;">
+          <span class="badge">HTML</span>
+          <span class="badge">CSS</span>
+          <span class="badge">JavaScript</span>
+          <span class="badge">Python</span>
+          <span class="badge">React</span>
+          <span class="badge">Git</span>
+          <span class="badge">Machine Learning</span>
+          <span class="badge">DSA</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="neon-box">
+        <h2>My Projects</h2>
+        <p>Here are some of my recent works:</p>
+        <div style="margin-top: 1rem;">
+          <a href="#" class="neon-btn">Project 1</a>
+          <a href="#" class="neon-btn" style="margin-left: 1rem;">Project 2</a>
+          <a href="#" class="neon-btn" style="margin-left: 1rem;">Project 3</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="neon-box">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for collaborations or just a friendly chat!</p>
+        <div style="margin-top: 1rem;">
+          <a href="mailto:your-email@example.com" class="neon-btn">Email Me</a>
+          <a href="https://www.linkedin.com/in/ipsita-umang-994b31293/" target="_blank" class="neon-btn" style="margin-left: 1rem;">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>
